@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Light.ttf">
+            <string>Poppins-Light</string>
+        </array>
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NowShowingMovieCollectionViewCell" customModule="Module5PadcProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="278" height="353"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="278" height="353"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qt7-Ud-8wX">
+                        <rect key="frame" x="0.0" y="0.0" width="278" height="353"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JzP-U3-2Ni">
+                                <rect key="frame" x="0.0" y="0.0" width="278" height="353"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eighthMovieImage" translatesAutoresizingMaskIntoConstraints="NO" id="A6V-s0-Jum">
+                                        <rect key="frame" x="16.5" y="0.0" width="245" height="260"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="260" id="JUk-Aa-1uo"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCW-fT-nzQ">
+                                        <rect key="frame" x="119" y="270" width="40.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Kq-mx-1UM">
+                                        <rect key="frame" x="119.5" y="301" width="39.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KpE-pj-JcU">
+                                        <rect key="frame" x="19" y="332" width="240" height="21"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JzP-U3-2Ni" firstAttribute="top" secondItem="Qt7-Ud-8wX" secondAttribute="top" id="PGI-nd-e4k"/>
+                            <constraint firstItem="JzP-U3-2Ni" firstAttribute="leading" secondItem="Qt7-Ud-8wX" secondAttribute="leading" id="i92-tG-UmP"/>
+                            <constraint firstAttribute="bottom" secondItem="JzP-U3-2Ni" secondAttribute="bottom" id="i9T-AI-5c0"/>
+                            <constraint firstAttribute="trailing" secondItem="JzP-U3-2Ni" secondAttribute="trailing" id="zDK-qC-ro4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Qt7-Ud-8wX" secondAttribute="bottom" id="29d-2i-w6o"/>
+                <constraint firstItem="Qt7-Ud-8wX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LSF-sD-vvf"/>
+                <constraint firstItem="Qt7-Ud-8wX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TiH-me-eFU"/>
+                <constraint firstAttribute="trailing" secondItem="Qt7-Ud-8wX" secondAttribute="trailing" id="wXb-gq-MAM"/>
+            </constraints>
+            <size key="customSize" width="278" height="353"/>
+            <connections>
+                <outlet property="movieGenre" destination="0Kq-mx-1UM" id="c1P-2d-TpG"/>
+                <outlet property="movieImage" destination="A6V-s0-Jum" id="k42-vJ-tre"/>
+                <outlet property="movieTitle" destination="cCW-fT-nzQ" id="ttJ-8d-3eV"/>
+            </connections>
+            <point key="canvasLocation" x="276.81159420289856" y="232.03125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="eighthMovieImage" width="245.33332824707031" height="368"/>
+    </resources>
+</document>

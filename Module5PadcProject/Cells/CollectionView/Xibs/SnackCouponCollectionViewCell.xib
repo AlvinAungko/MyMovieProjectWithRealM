@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Light.ttf">
+            <string>Poppins-Light</string>
+        </array>
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SnackCouponCollectionViewCell" customModule="Module5PadcProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="94"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="332" height="94"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p0Q-BN-wqd">
+                        <rect key="frame" x="0.0" y="0.0" width="332" height="94"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="E0o-HL-fMN">
+                                <rect key="frame" x="0.0" y="0.0" width="332" height="94"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xC3-EL-el4">
+                                        <rect key="frame" x="0.0" y="0.0" width="332" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Combo set M" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wi0-A5-OER">
+                                                <rect key="frame" x="0.0" y="0.0" width="216" height="21"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wKm-mb-66r">
+                                                <rect key="frame" x="216" y="0.0" width="116" height="21"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgh-iG-sI3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="58" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQ3-gR-nEo">
+                                                        <rect key="frame" x="58" y="0.0" width="58" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="aQ3-gR-nEo" firstAttribute="width" secondItem="wKm-mb-66r" secondAttribute="width" multiplier="0.5" id="kpR-aS-gCj"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Wi0-A5-OER" firstAttribute="width" secondItem="xC3-EL-el4" secondAttribute="width" multiplier="0.65" id="EiI-FS-Uc5"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Msr-1x-1JK">
+                                        <rect key="frame" x="0.0" y="28" width="332" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Combo Size M 22oz. Coke(X1) and medium popcorn (X1)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDx-Un-rYu">
+                                                <rect key="frame" x="0.0" y="0.0" width="216" height="31"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DaC-ly-4jr">
+                                                <rect key="frame" x="216" y="0.0" width="116" height="31"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orj-py-AqE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="38.5" height="31"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="-"/>
+                                                        <connections>
+                                                            <action selector="onTapDecrease:" destination="gTV-IL-0wX" eventType="touchUpInside" id="dAf-P9-I0T"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ArO-1b-L29">
+                                                        <rect key="frame" x="38.5" y="0.0" width="39" height="31"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dh-Xn-Rwq">
+                                                        <rect key="frame" x="77.5" y="0.0" width="38.5" height="31"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="+"/>
+                                                        <connections>
+                                                            <action selector="onTabIncrease:" destination="gTV-IL-0wX" eventType="touchUpInside" id="z4K-PP-ZG2"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="sDx-Un-rYu" firstAttribute="width" secondItem="Msr-1x-1JK" secondAttribute="width" multiplier="0.65" id="VzC-n5-F0J"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6H-Tu-O8F">
+                                        <rect key="frame" x="0.0" y="66" width="332" height="28"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="E0o-HL-fMN" secondAttribute="bottom" id="9kI-aU-tYI"/>
+                            <constraint firstItem="E0o-HL-fMN" firstAttribute="leading" secondItem="p0Q-BN-wqd" secondAttribute="leading" id="BFw-6S-dfy"/>
+                            <constraint firstItem="E0o-HL-fMN" firstAttribute="top" secondItem="p0Q-BN-wqd" secondAttribute="top" id="OP9-Ed-GXA"/>
+                            <constraint firstAttribute="trailing" secondItem="E0o-HL-fMN" secondAttribute="trailing" id="iH2-zA-Vv2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="p0Q-BN-wqd" secondAttribute="trailing" id="YM5-Mb-odt"/>
+                <constraint firstItem="p0Q-BN-wqd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jMa-we-U4y"/>
+                <constraint firstItem="p0Q-BN-wqd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qfn-Fk-HNf"/>
+                <constraint firstAttribute="bottom" secondItem="p0Q-BN-wqd" secondAttribute="bottom" id="tL0-O7-Eht"/>
+            </constraints>
+            <size key="customSize" width="332" height="94"/>
+            <connections>
+                <outlet property="dropThePriceButton" destination="orj-py-AqE" id="IgD-jT-PYS"/>
+                <outlet property="increaseTheItemButton" destination="7Dh-Xn-Rwq" id="JlB-Nx-bTX"/>
+                <outlet property="junkSnackNameLabel" destination="Wi0-A5-OER" id="e13-KH-tTX"/>
+                <outlet property="priceForEachSnack" destination="rgh-iG-sI3" id="o4L-hQ-UXY"/>
+                <outlet property="priceLabel" destination="ArO-1b-L29" id="1kt-qw-oGj"/>
+                <outlet property="snackDescriptionLabel" destination="sDx-Un-rYu" id="6lF-C5-zOv"/>
+                <outlet property="snackNameLabel" destination="E0o-HL-fMN" id="69z-BL-Eyu"/>
+            </connections>
+            <point key="canvasLocation" x="340.57971014492756" y="92.410714285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
